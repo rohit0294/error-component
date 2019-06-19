@@ -1,0 +1,7 @@
+<form [formGroup]="userForm">
+  <input formControlName="username" placeholder="Username" />
+  <error controlName="Username" [errors]="getFormControl('username').errors"></error>
+  <br>
+  <input formControlName="password" placeholder="Password" />
+  <error controlName="Password" [errors]="getFormControl('password').errors"></error>
+</form>
