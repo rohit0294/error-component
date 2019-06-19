@@ -12,6 +12,10 @@ export class AppComponent  {
   constructor(
     private fb: FormBuilder
   ){
+    this.buildForm();
+  }
+
+  buildForm() {
     this.userForm = this.fb.group({
       username: [
         '',
